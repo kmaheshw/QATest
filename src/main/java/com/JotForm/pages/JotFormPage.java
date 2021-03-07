@@ -17,9 +17,7 @@ import com.JotForm.util.TestUtil;
  
 
 public class JotFormPage extends TestBase {
-
-
-	@FindBy(xpath = "//input[@id='first_16']")
+       @FindBy(xpath = "//input[@id='first_16']")
 	WebElement firstName;
 
 	@FindBy(xpath = "//input[@id='last_16']")
