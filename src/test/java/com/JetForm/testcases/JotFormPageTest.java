@@ -28,7 +28,7 @@ public class JotFormPageTest extends TestBase {
 		// testUtil = new TestUtil();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=0)
 	public void verifyHomePageTitleTest(){ //Method to verify home page title
 		String homePageTitle = jotFormPage.verifyPageTitle();
 		String message="Actual title is " + homePageTitle;
@@ -43,7 +43,7 @@ public class JotFormPageTest extends TestBase {
 		
 	}
 	
-	@Test(priority=0)
+	@Test(priority=2)
 	public void verifyTitleTest(){ //Method to verify home page title
 		String homePageTitle = jotFormPage.verifyPageTitle();
 		String message="Actual title is " + homePageTitle;
