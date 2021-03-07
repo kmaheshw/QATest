@@ -16,13 +16,8 @@
 	<parameter name = "flight" value="12345"/> 
 	<parameter name = "specialRequest" value="Non smoker room"/> 
 	<parameter name = "image" value="image.jpg"/>
-  
-    
-
-System.getProperty("user.dir") +"/resources/Drivers/chromedriver	
-	
-	
-	
+  	
+		
 		<classes>
 			<class name="com.JetForm.testcases.JotFormPageTest"></class>
 			
