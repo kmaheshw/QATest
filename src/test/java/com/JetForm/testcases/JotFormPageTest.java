@@ -35,13 +35,13 @@ public class JotFormPageTest extends TestBase {
 		Assert.assertEquals(homePageTitle, "Hotel Booking Form", message);
 	}
 	
-	@Parameters({ "fName", "lName" ,"emailId", "roomTypeEntry", "NumberOfGuest","ArrivalDate","departureMonth","departureDay", "departureYear","flight","specialRequest"})
+	/*@Parameters({ "fName", "lName" ,"emailId", "roomTypeEntry", "NumberOfGuest","ArrivalDate","departureMonth","departureDay", "departureYear","flight","specialRequest"})
 	@Test(priority=1)
 	public void EnterFormInformation(String fName,String lName,String emailId, String roomTypeEntry, String NoOfGuest,String ArrivalDate,String departureMonth,String departureDay, String departureYear,String flight,String specialRequest) throws AWTException{ //Method to verify home page title
 		jotFormPage.fillForm(fName,lName,emailId,roomTypeEntry,NoOfGuest,ArrivalDate,departureMonth,departureDay,departureYear,flight,specialRequest);
 		
 		
-	}
+	}*/
 	
 	/*@Test(priority=2)
 	public void verifyTitleTest(){ //Method to verify home page title
