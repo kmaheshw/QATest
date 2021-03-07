@@ -28,7 +28,9 @@ public class JotFormPageTest extends TestBase {
 		// testUtil = new TestUtil();
 	}
 	
-	@Test(priority=0)
+	//@Test(priority=0)
+	
+	@Test()
 	public void verifyHomePageTitleTest(){ //Method to verify home page title
 		String homePageTitle = jotFormPage.verifyPageTitle();
 		String message="Actual title is " + homePageTitle;
@@ -36,14 +38,16 @@ public class JotFormPageTest extends TestBase {
 	}
 	
 	@Parameters({ "fName", "lName" ,"emailId", "roomTypeEntry", "NumberOfGuest","ArrivalDate","departureMonth","departureDay", "departureYear","flight","specialRequest"})
-	@Test(priority=1)
+	//@Test(priority=1)
+	@Test(dependsOnMethods={"verifyHomePageTitleTest"})
 	public void EnterFormInformation(String fName,String lName,String emailId, String roomTypeEntry, String NoOfGuest,String ArrivalDate,String departureMonth,String departureDay, String departureYear,String flight,String specialRequest) throws AWTException{ //Method to verify home page title
 		jotFormPage.fillForm(fName,lName,emailId,roomTypeEntry,NoOfGuest,ArrivalDate,departureMonth,departureDay,departureYear,flight,specialRequest);
 		
 		
 	}
 	
-	@Test(priority=2)
+	//@Test(priority=2)
+	@Test(dependsOnMethods={"EnterFormInformation"})
 	public void verifyTitleTest(){ //Method to verify home page title
 		String homePageTitle = jotFormPage.verifyPageTitle();
 		String message="Actual title is " + homePageTitle;
