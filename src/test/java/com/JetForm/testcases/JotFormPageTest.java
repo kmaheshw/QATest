@@ -28,10 +28,10 @@ public class JotFormPageTest extends TestBase {
 		// testUtil = new TestUtil();
 	}
 	
-	@Test(priority=0)
+	/*@Test(priority=0)
 	public void verifyHomePageTitleTest(){ //Method to verify home page title
 		String homePageTitle = jotFormPage.verifyPageTitle();
-		String message="Actual title is " + homePageTitle;
+	String message="Actual title is " + homePageTitle;
 		Assert.assertEquals(homePageTitle, "Hotel Booking Form", message);
 	}
 	
@@ -41,9 +41,10 @@ public class JotFormPageTest extends TestBase {
 		jotFormPage.fillForm(fName,lName,emailId,roomTypeEntry,NoOfGuest,ArrivalDate,departureMonth,departureDay,departureYear,flight,specialRequest);
 		
 		
-	}
+	}*/
 	
-	@Test(priority=2)
+	//@Test(priority=2)
+	@Test()
 	public void verifyTitleTest(){ //Method to verify home page title
 		String homePageTitle = jotFormPage.verifyPageTitle();
 		String message="Actual title is " + homePageTitle;
