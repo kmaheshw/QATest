@@ -43,7 +43,7 @@ public class JotFormPageTest extends TestBase {
 		jotFormPage.fillForm(fName,lName,emailId,roomTypeEntry,NoOfGuest,ArrivalDate,departureMonth,departureDay,departureYear,flight,specialRequest);
 		
 		
-	}*/
+	}
 	//@Test()
 	@Test (priority = 2)
 	
